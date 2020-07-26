@@ -1,0 +1,29 @@
+type: code
+files:
+- name: task.py
+  visible: true
+  text: |-
+    # place `import` statement at top of the program
+
+
+    # don't modify this code or variable `n` may not be available
+    n = int(input())
+
+    # put your code here
+  learner_created: false
+feedback_link: https://hyperskill.org/learn/step/7178
+status: Solved
+feedback:
+  message: |
+    Failed test #1 of 10. Runtime error
+
+    Traceback (most recent call last):
+      File "jailed_code", line 9, in <module>
+        print(random.randint(100, -100))
+      File "/opt/pythonz/pythons/CPython-3.6.2/lib/python3.6/random.py", line 220, in randint
+        return self.randrange(a, b+1)
+      File "/opt/pythonz/pythons/CPython-3.6.2/lib/python3.6/random.py", line 198, in randrange
+        raise ValueError("empty range for randrange() (%d,%d, %d)" % (istart, istop, width))
+    ValueError: empty range for randrange() (100,-99, -199)
+  time: Fri, 03 Jul 2020 20:03:02 UTC
+record: -1
